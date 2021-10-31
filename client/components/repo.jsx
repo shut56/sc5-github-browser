@@ -43,7 +43,9 @@ const Repo = ({ user, setRepo }) => {
             return (
               <tr key={repoObj.id}>
                 <td>
-                  <button type="button" onClick={() => onClick(repoObj.name)}>{repoObj.name}</button>
+                  <button type="button" onClick={() => onClick(repoObj.name)}>
+                    {repoObj.name}
+                  </button>
                 </td>
               </tr>
             )
